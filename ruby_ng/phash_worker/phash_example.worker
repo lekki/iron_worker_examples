@@ -1,0 +1,17 @@
+name "PhashExample"
+
+full_remote_build true
+
+# The actual worker file to execute
+exec "phash_example.rb"
+
+#dependencies
+deb 'http://launchpadlibrarian.net/86796390/libmpg123-0_1.12.1-3.2ubuntu1_amd64.deb'
+deb 'http://launchpadlibrarian.net/83022664/libphash0_0.9.4-1.2_amd64.deb'
+gem 'ffi', '1.3.1'
+gem 'pHash', '1.1.3'
+
+#example files
+file 'test1.jpg'
+file 'test2.png'
+
